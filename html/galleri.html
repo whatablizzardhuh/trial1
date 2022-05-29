@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Galleri</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar" id="nvbar">
+      <a href="index.html">Hem</a>
+      <a href="galleri.html" class="active">Galleri</a>
+      <a href="quan.html">Quan Media</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="om.html">Om</a>
+      <a href="javacript:void(0)" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="titel">
+      <h1>Galleri</h1>
+    </div>
+    <div class="div-content">
+      <img
+        class="mySlides"
+        src="../images/productjam.jpg"
+        alt="Tantolundens Marina"
+      />
+      <img
+        class="mySlides"
+        src="../images/oreocupcakes.jpg"
+        alt="Helsingfors Storkyrka"
+      />
+      <img
+        class="mySlides"
+        src="../images/cutecupcakes.jpg"
+        alt="Överblig över Gamla stan"
+      />
+      <img
+        class="mySlides"
+        src="../images/cartitemhellokitty.jpg"
+        alt="Solnedgång över Ekerö"
+      />
+      <img
+        class="mySlides"
+        src="../images/megacutecupcakes.jpg"
+        alt="Valborgseld"
+      />
+      <button class="slider-button display-left" onclick="changeImage(-1)">
+        &#129076;
+      </button>
+      <button class="slider-button display-right" onclick="changeImage(1)">
+        &#129078;
+      </button>
+    </div>
+    <img
+      id="myImg"
+      src="../images/sanrioinspiredcake.jpg"
+      alt="Bild på grenada"
+      style="width: 100%; max-width: 300px"
+    />
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" alt="Bild på grenada"/>
+      <div id="caption"></div>
+    </div>
+    <script src="../js/domjs.js"></script>
+    <footer>
+      <p>Tim Saaraenen Fotografi - Alla bilder är originella</p>
+      <a href="#nvbar"> Tillbaka till toppen</a>
+    </footer>
+  </body>
+</html>
